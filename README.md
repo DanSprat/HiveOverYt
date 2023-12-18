@@ -45,6 +45,8 @@ Hadoop исполняет операции согласно описанию в 
 [ExecMapper](https://github.com/apache/hive/blob/master/ql/src/java/org/apache/hadoop/hive/ql/exec/mr/ExecMapper.java#L61) - непосредственно класс Map операции. Метод map преобразует входную строку, применяя цепочку операторов
 
 По аналогии работают классы [ExecReduceRunner]() и [ExecReducer]() 
+Также в методе ExecDriver'a происходит создание временных таблиц для будущих операций. 
+Затем Создается [JobClient]() в который передается "надутый" [JobConfig](), где собственно и исполняется
 
 
 
