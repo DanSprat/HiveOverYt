@@ -44,6 +44,8 @@ Hadoop исполняет операции согласно описанию в 
 [ExecMapRunner](https://github.com/apache/hive/blob/master/ql/src/java/org/apache/hadoop/hive/ql/exec/mr/ExecMapRunner.java#L29) - запускает выполнение Map операции </br>
 [ExecMapper](https://github.com/apache/hive/blob/master/ql/src/java/org/apache/hadoop/hive/ql/exec/mr/ExecMapper.java#L61) - непосредственно класс Map операции. Метод map преобразует входную строку, применяя цепочку операторов
 
+По аналогии работают классы [ExecReduceRunner]() и [ExecReducer]() 
+
 
 
 
