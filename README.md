@@ -46,8 +46,12 @@ Hadoop исполняет операции согласно описанию в 
 
 По аналогии работают классы [ExecReduceRunner]() и [ExecReducer]() 
 Также в методе ExecDriver'a происходит создание временных таблиц для будущих операций. 
-Затем Создается [JobClient]() в который передается "надутый" [JobConfig](), где собственно и исполняется
+Затем Создается [JobClient]() в который передается "надутый" [JobConfig](), после чего клиент исполняет задачи.
 
+Полезные ссылки:
+* Базовая схема работы Hive с Hadoop: (https://www.geeksforgeeks.org/architecture-and-working-of-hive/)
+* Hive-bigquery-connector от гугла (https://github.com/GoogleCloudDataproc/hive-bigquery-connector/tree/main). Хоть в качестве экзекьютора он и оставляет Hadoop, но при этом переопределяет для Hive'а и Hadoop'а их файловую систему HDFS на свою
+* Попытки товарища из индии разобраться в этом (https://gist.github.com/rohitdholakia/a5f32f644859e09b6f52) 
 
 
 
